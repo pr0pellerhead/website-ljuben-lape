@@ -505,6 +505,7 @@ div.content div.right-side{
 	text-align: center;
 	color: #ffffff;
 	margin-top: 15px;
+	float: right;
 }
 	div.content div.right-side h1{
 		font-size: 23px;
