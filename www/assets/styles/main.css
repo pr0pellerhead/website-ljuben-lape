@@ -34,6 +34,8 @@ button.procitaj{
 button.procitaj:hover{
     opacity: 0.5;
 }
+
+
 /*======================================
 =            header top css            =
 ======================================*/
@@ -629,6 +631,11 @@ footer .center div{
     float: left;
 }
 
+	footer .center div.quick-links , 
+	footer .center div.contact{
+		width: 33.33%;
+	} 
+
 
 footer .center div.quick-links{
     padding-top: 3.52vh;
@@ -645,6 +652,51 @@ footer .center div.quick-links a{
 }
 footer .center div.quick-links a:hover{
     opacity: 0.5;
+}
+
+
+
+footer .center div.contact{
+	/*text-align: center;*/
+	position: relative;
+	padding-top: 3.52vh;
+	color: rgb(255, 255, 255);
+}
+footer .center div.contact img{
+	padding: 0 35px 14px 25%;
+}
+	footer .center div.contact span.telefon{
+		position: absolute;
+		top: 50px;
+  		font-size: 30px;
+  		line-height: 1.2;
+	}
+	footer .center div.contact span.mail{
+		text-align: center;
+    	display: block;
+    	padding:14px 0;
+    	line-height: 1.2;
+    	position: absolute;
+	    right: 100px;
+	    top: 120px;
+	}
+	footer .center div.contact span.adresa{
+		text-align: center;
+    	display: block;
+		padding:14px 0;
+		position: absolute;
+		bottom: 7px;
+	    right: 100px;
+	  	font-size: 14px;
+	  	line-height: 1.5;
+	}
+
+hr.contact-hr{
+	background:#6eb87e;
+	width: 80%;
+	padding: 1px 0;
+	border: 1px solid #0fa857;
+	margin: 0 auto;
 }
 
 /*Copyrights*/
