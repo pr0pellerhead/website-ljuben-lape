@@ -143,7 +143,7 @@ div.nav a:hover{
 }
 
 /*=====================================
-=            za ucilisteot            =
+=            za ucilisteto            =
 =====================================*/
 div.za-ucilisteto{
 	height:510px;
@@ -681,6 +681,8 @@ div.slobodni-aktivnosti a{
 	margin-top:50px;
 	border-top:15px solid #57bb89;
 	padding-top:36px;
+	width:1300px;
+	margin:0 auto;
 }
 .pomosni-linkovi a{
 	width:10%;
@@ -772,3 +774,149 @@ div.adresa span{
 	opacity:0.5;
 }
 
+
+/*============================================
+=            ZA RODITELITE - PAGE            =
+============================================*/
+
+div.page-roditeli div.slide-left{
+	width:100%;
+	webkit-shape-outside: none;
+    shape-outside: none;
+    -webkit-clip-path: none;
+    background-image:url("../images/za-roditelite-page.jpg");
+}
+
+div.page-roditeli div.slide-right{
+	background:rgba( 0 ,0 , 0 ,.7 );
+}
+
+div.page-roditeli div.slide-right h1{
+	color:#fff;
+	margin-left:180px;
+	margin-top:230px;
+	font-size:48px;
+	font-weight:bold;
+}
+
+/*==============================================================
+=            sorabotka megu roditelite i ucilisteto            =
+==============================================================*/
+
+div.sections div.sorabotka-page-roditeli{
+	margin-top:45px;
+}
+div.sections div.sorabotka-page-roditeli h1{
+	color:#813e3e;
+	font-size:18px;
+	font-weight:bold;
+	text-transform:uppercase;
+	border-image:url( '../images/border-red.png' ) 1 round ;
+	border-image-repeat: stretch;
+	border-top:1px solid transparent;
+	border-bottom:1px solid transparent;
+	padding:20px 0;
+	margin-bottom:50px;
+}
+
+div.sections div.sorabotka-page-roditeli span.podnaslov-page-roditeli{
+	display:block;
+	font-size:18px;
+	color:#000;
+	font-weight:600;
+}
+
+div.sorabotka-page-roditeli{
+	min-height:200px;
+}
+
+div.sorabotka-page-roditeli div.prv-del-page-roditeli{
+	width:430px;
+	box-sizing:border-box;
+	float:left;
+}
+div.prv-del-page-roditeli{
+	margin-right:5px;
+	height:100%;
+}
+div.vtor-del-page-roditeli{
+	margin:0;
+	height:100%;
+	padding-top:75px;
+	padding-left:10px;
+	padding-right:10px;
+	height:100%;
+}
+div.vtor-del-page-roditeli img{
+	width:100%;
+}
+div.tret-del-page-roditeli{
+	margin-right:0;
+	margin-left:5px;
+}
+
+
+div.prv-del-page-roditeli span{
+	font-size:16px;
+	color:#6c6767;
+	font-weight:600;
+}
+
+div.prv-del-page-roditeli div.tocka-page-roditeli{
+	margin-top:75px;
+	margin-bottom:10px;
+}
+
+div.prv-del-page-roditeli .tocka-page-roditeli h2{
+	font-size:23px;
+	color:#57bb89;
+	line-height:24px;
+	display:inline;
+	float:left;
+	width:389px;
+	font-weight:600;
+	padding-left:3px;
+	box-sizing:border-box;
+}
+div.prv-del-page-roditeli div.tocka-page-roditeli span{
+	height:100%;
+	background:#57bb89;
+	color:#fff;
+	font-size:36px;
+	display:inline;
+	float:left;
+	padding:5px 10px;
+}
+
+/*====================================================
+=            PDF SECTION - PAGE RODITELIT            =
+====================================================*/
+
+div.section-pdf-page-roditeli{
+	width:100%;
+	background:url('../images/pdf-image.jpg') no-repeat;
+	background-size:cover;
+	height:450px;
+	margin-bottom:55px;
+	text-align:center;
+}
+div.section-pdf-page-roditeli h1{
+	display:block;
+	width:1300px;
+	margin:0 auto;
+	text-align:center;
+	font-size:36px;
+	color:#e4e4e4;
+	font-weight:bold;
+	padding-top:110px;
+	margin-bottom: 115px;
+}
+
+div.section-pdf-page-roditeli a{
+	background:#6eb87e;
+	text-align:center;
+	font-size:14px;
+	padding:10px;
+	text-decoration:none;
+	color:#fff;
+}
