@@ -1,0 +1,119 @@
+/*********************************
+CSS ZA UCILISHTETO
+**********************************/
+div.za-ucilisteto-content {
+
+}
+li.transparent{
+    height: 50px;
+    background-color: white;
+    border-width: 0px !important;
+}
+
+ul.tabs {
+    margin-top: 50px;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #a0706f;
+
+}
+
+ul.tabs ul {
+    background-color: #cdb2b2;
+    display: none;
+    margin-left: -40px;
+}
+
+ul.tabs li.first-child {
+    box-sizing: border-box;
+    padding: 20px 0 20px 40px;
+    cursor: pointer;
+    -webkit-transition: .5s ease-in-out;
+    transition: .05s ease-in-out;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+ul.tabs li ul li.second-child {
+    box-sizing: border-box;
+    padding: 40px;
+    overflow: auto;
+    font-size: 18px;
+    line-height: 1.222;
+    font-weight: 100;
+
+}
+
+ul.tabs li.first-child:hover
+/*ul.tabs li.first-child:hover .second-child */{
+    background-color:#864646;
+}
+
+
+/*h2 naslovi */
+h2{
+    font-size: 24px;
+    font-family:"Open Sans";
+    color: rgb(160, 112, 111);
+    line-height: 0.917;
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+/*********************************
+LICNA KARTA
+**********************************/
+#licna-karta div{
+   display: inline-block;
+    float: left;
+    width: 50%;
+    line-height: 2;
+}
+#licna-karta div:nth-child(2)  {  text-align: center;}
+.oprema{
+    width: 100% !important;
+    display: block !important;
+    padding-top: 40px;
+}
+#licna-karta img{
+    padding-top: 60px;
+    width: 400px;
+}
+
+/*********************************
+MISIJA I VIZIJA
+**********************************/
+#misija-vizija{
+    display: block;
+}
+#misija-vizija p{
+    /*width: 800px;*/
+    padding-top: 60px;
+    line-height: 2;
+}
+#misija-vizija img{
+    float: left;
+    padding: 40px 80px 40px 80px;
+}
+#misija-vizija span{
+    display: block;
+    line-height: 2;
+}
+/*********************************
+KUKJEN RED
+**********************************/
+#kukjen-red span{
+    display: block;
+    line-height: 3;
+}
+/*********************************
+HIMNA
+**********************************/
+.himna-tekst{
+    text-align: center;
+    line-height: 1.5;
+}
+
