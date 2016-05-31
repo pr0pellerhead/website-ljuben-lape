@@ -4,6 +4,9 @@ CSS ZA UCILISHTETO
 div.za-ucilisteto-content {
 
 }
+
+
+
 li.transparent{
     height: 50px;
     background-color: white;
@@ -49,9 +52,11 @@ ul.tabs li ul li.second-child {
 
 ul.tabs li.first-child:hover
 /*ul.tabs li.first-child:hover .second-child */{
-    background-color:#864646;
+opacity: .8
 }
-
+.light{
+    background-color: #b9a695;
+}
 
 /*h2 naslovi */
 h2{

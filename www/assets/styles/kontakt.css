@@ -1,0 +1,30 @@
+.right-section{
+    margin-bottom: 25px;
+}
+div.page-roditeli div.slide-left{
+    background-image: url("../images/kontakt-bg.jpg");
+}
+.kontakt-title{
+    color: #813e3e;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-image: url('../images/border-red.png') 1 round;
+    border-image-repeat: stretch;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+.kontakt-info{
+    padding-left: 60px;
+}
+.kontakt-info p{
+    margin: 0 0 60px 0;
+}
+
+.kontakt-info p i{
+    color: #439069;
+    font-size: 24px;
+    padding-right: 30px;
+}
