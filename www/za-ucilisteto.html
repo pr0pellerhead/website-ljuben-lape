@@ -265,28 +265,9 @@
 
 <!--jQuery library-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script>
-    var list_items = document.querySelectorAll('.tabs > li');
 
-    for(var i = 0; i < list_items.length; i++){
-        list_items[i].addEventListener('click', function(){
-            if (this.querySelector('ul').style.display == 'block'){
-                this.querySelector('ul').style.display = 'none';
-            } else {
-                this.querySelector('ul').style.display = 'block';
-            }
-        });
-    }
+<script src="assets/scripts/main.js"></script>
 
-    var li = document.querySelectorAll('li li');
-
-//    for(var a = 0; a < li.length; a++) {
-//        li[a].addEventListener('click', function (e) {
-//            e.stopPropagation();
-//        });
-//    }
-
-</script>
 
 </body>
 </html>
