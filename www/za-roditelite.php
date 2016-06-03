@@ -1,61 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Ljuben Lape</title>
-	<link rel="stylesheet" type="text/css" href="assets/styles/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/styles/main.css">
-</head>
-<body>
-
-	<div id="wrap">
-		<div class="top-header">
-			<div class="wraper clear-fix">
-				<div class="mail">
-					<i class="fa fa-envelope" aria-hidden="true"></i>
-					<span>ljubenlape@info.edu.mk</span>
-				</div><!-- mail -->
-				<div class="phone">
-					<i class="fa fa-mobile" aria-hidden="true"></i>
-					<span>+38971123456</span>
-				</div><!-- phone -->
-			</div><!-- wraper -->
-		</div><!-- top-header -->
-
-		<div class="header">
-			<div class="wraper clear-fix">
-				<div class="logo">
-					<a href="#"><img src="assets/images/logo-goelmo.png"></a>
-				</div><!-- logo -->
-
-				<div class="himna">
-					<form class="clear-fix">
-						<input type="text" name="" placeholder="барај...">
-						<input type="submit" name="" value="">
-					</form>
-
-					<audio controls>
-					  <source src="horse.ogg" type="audio/ogg">
-					  <source src="horse.mp3" type="audio/mpeg">
-					  Your browser does not support the audio tag.
-					</audio>
-				</div><!-- himna -->
-
-				<div class="aerodrom-logo">
-					<a href="#"><img src="assets/images/logo-aerodrom.png"></a>
-				</div>
-			</div><!-- wraper -->
-		</div><!-- header -->
-
-		<div class="wraper">
-			<div class="nav">
-				<a href="#">почетна</a>
-				<a href="#">за училиштеот</a>
-				<a href="#">настава</a>
-				<a href="#">проекти и натпревари</a>
-				<a href="#">за родителите</a>
-				<a href="#">контакт</a>
-			</div>
+<?php  
+    $css_files = [ 'reset.css' , 'main.css' ];
+    $page_title = "За родителите";
+    include_once "../sys/includes/header.php";
+?>
 
 			<div class="za-ucilisteto page-roditeli clear-fix">
 				<div class="slide-left"></div><!-- slide-left -->
@@ -168,52 +115,4 @@
 
 				<a href="#">превземи го документот</a>
 			</div><!-- .section-pdf-page-roditeli -->
-
-			<div class="pomosni-linkovi clear-fix">
-				<a href="#"><img src="assets/images/korisni1.png" alt=""></a>
-				<a href="#"><img src="assets/images/korisni2.png" alt=""></a>
-				<a href="#"><img src="assets/images/korisni3.png" alt=""></a>
-				<a href="#"><img src="assets/images/korisni4.png" alt=""></a>
-				<a href="#"><img src="assets/images/korisni5.png" alt=""></a>
-			</div><!-- pomosni-linkovi -->
-
-
-		<div class="footer">
-			<div class="wraper clear-fix">
-				<div class="left-footer clear-fix">
-					<a href="#"><img src="assets/images/logo2.png" alt=""></a>
-					<ul>
-						<li><a href="#">Почетна</a></li>
-						<li><a href="#">За училиштето</a></li>
-						<li><a href="#">Проекти и натпревари</a></li>
-						<li><a href="#">Настава</a></li>
-						<li><a href="#">За родителите</a></li>
-						<li><a href="#">Галерија</a></li>
-						<li><a href="#">Контакти</a></li>
-					</ul>
-				</div><!-- left-footer -->
-				<div class="right-footer clear-fix">
-					<h1>02/3121 255</h1>
-					<div class="director">
-						<span>Директор:</span>
-						<span>director@ljubenlape.edu.mk</span>
-					</div><!-- director -->
-					<div class="director">
-						<span>E-mail:</span>
-						<span>contact@ljubenlape.edu.mk</span>
-					</div><!-- director -->
-					<div class="adresa">
-						<span>Видео Смилески Бато бр.4/лок 3 Аеродром Скопје</span>
-					</div><!-- adresna -->
-				</div><!-- right-footer -->
-			</div><!-- wraper -->
-		</div><!-- footer -->
-		<div class="footer-bottom">
-			<span>Copyright &copy; 2016 ООУ ,,Љубен Лапе''-Oпштина Аеродром | </span> 
-			<span>Сите права се заштитени |</span> 
-			<span>Дизајн и Изработка:Академија за Веб Дизајн При Семос Едукација</span>
-		</div><!-- footer-bottom -->
-	</div><!-- #wrap -->
-
-</body>
-</html>
+<?php	include_once "../sys/includes/footer.php";?>

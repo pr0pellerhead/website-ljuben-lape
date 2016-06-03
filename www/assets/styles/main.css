@@ -678,11 +678,11 @@ div.slobodni-aktivnosti a{
 =======================================*/
 
 .pomosni-linkovi{
-	margin-top:50px;
+	
 	border-top:15px solid #57bb89;
 	padding-top:36px;
 	width:1300px;
-	margin:0 auto;
+	margin:50px auto;
 }
 .pomosni-linkovi a{
 	width:10%;
