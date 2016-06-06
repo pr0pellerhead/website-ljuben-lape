@@ -109,6 +109,7 @@
                                 <td align="center">
                                     <a href="?page=strani_edit&id=<?=$row['id']?>"
                                        class="btn btn-default"><em class="fa fa-pencil"></em></a>
+
                                     <a href="?page=strani_delete&id=<?=$row['id']?>"
                                        class="btn btn-danger"><em class="fa fa-trash"></em></a>
                                 </td>
@@ -116,6 +117,7 @@
                                 <td><?=$row['naslov']?></td>
                                 <td><?=$row['objavena_na']?></td>
                                 <td><?=$row['sodrzina']?></td>
+                                <!-- <td></td> -->
                             </tr>
                             <?php } ?>
                         </tbody>

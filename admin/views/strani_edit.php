@@ -1,16 +1,10 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Kristina Shalkoska
- * Date: 5/13/2016
- * Time: 11:55 AM
- */
-?>
+
 <style>
     h1{
         text-align: center;
     }
 </style>
+<meta charset="utf-8">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 <script>
@@ -39,49 +33,32 @@
             <div class="panel panel-default panel-table">
                 <div class="panel-heading">
                     <div class="row">
-                        <form action="controllers/strani.php" method="post" enctype="multipart/form-data">
+                        <form action="admin.php?page=strani_edit&id=<?php echo $id; ?>" method="post">
                             <div class="col col-xs-12">
 
                                 <h3 class="panel-title">Ljuben Lape nova strana</h3>
                                 <label for="">
                                     Naslov: <br>
-                                    <input type="text" name="naslov">
+                                    <input type="text" name="naslov" value="<?php echo $strana['naslov']; ?>" >
                                 </label>
                                 <br>
                                 <label for="">
                                     Sodrzina <br>
-                                    <textarea name="sodrzina" id="" cols="30" rows="10"></textarea>
+                                    <textarea name="sodrzina" id="" cols="30" rows="10"><?php echo $strana['sodrzina']; ?></textarea>
                                 </label> <br>
                                 <label for="">
                                     Kategorii <br>
                                     <select name="id_kategorija" id="">
-                                        <?php foreach($res_kategorii as $k){?>
-                                            <option value="<?=$k['id'];?>"><?=$k['kategorija'];?></option>
+                                        <?php foreach($kategorii as $k){?>
+                                            <option value="<?=$k['id'];?>" <?php echo $strana['id_kategorija'] == $k['id'] ? "selected" : ""; ?> ><?=$k['kategorija'];?></option>
                                         <?php } ?>
                                     </select>
                                 </label>
-                                <br>
-                                <label for="">
-                                    Golema slika <br>
-                                    <input type="file" name="slika_golema">
-                                </label>
-                                <label for="">
-                                    Mala slika <br>
-                                    <input type="file" name="slika_mala">
-                                </label>
-                                <br>
-                                <label for="">
-                                    Galerija<br>
-                                    <select name="id_galerija" id="">
-                                        <?php foreach($res_galerii as $g){?>
-                                            <option value="<?=$g['id'];?>"><?=$g['ime'];?></option>
-                                        <?php } ?>
-                                    </select>
-                                </label>
+                               
 
                             </div>
                             <div class="col col-xs-6 text-right">
-                                <a href=""><button type="submit" class="btn btn-sm btn-primary btn-create" name="save">Save</button></a>
+                                <a href=""><button type="submit" class="btn btn-sm btn-primary btn-create" name="save">Зачувај</button></a>
                             </div>
 
                         </form>

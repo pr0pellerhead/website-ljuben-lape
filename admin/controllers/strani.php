@@ -16,8 +16,8 @@ $query=$db->query('select * from galerii');
 $res_galerii=$query->fetchAll(PDO::FETCH_ASSOC);
 
 if (isset($_POST['save'])){
-
-        $upload_dir = "../uploads/";
+ $upload_dir = "../uploads/";
+       
         if($_FILES['slika_golema']['error']== 0 && $_FILES['slika_mala']['error']==0){
             $tmp_golema = $_FILES['slika_golema']['tmp_name'];
             $tmp_mala = $_FILES['slika_mala']['tmp_name'];
@@ -29,7 +29,7 @@ if (isset($_POST['save'])){
             $path_slika_golema= $upload_dir.$new_name_golema;
 
             if(move_uploaded_file($tmp_golema, $path_slika_golema) && move_uploaded_file($tmp_mala,$path_slika_mala)){
-
+                
                 $query = $db->prepare('insert into strani (naslov,sodrzina,objavena_na,id_kategorija,id_galerija,slika_mala, slika_golema) values (:naslov, :sodrzina, now(), :id_kategorija, :id_galerija,:slika_mala, :slika_golema)');
                 $query->bindValue(':slika_mala',$new_name_mala );
                 $query->bindValue(':slika_golema',$new_name_golema );
@@ -53,6 +53,6 @@ if (isset($_POST['save'])){
             $query->execute();
         }
 //}
-//    header('location:../admin.php?page=strani');
+   header('location:../admin.php?page=strani');
 }
 

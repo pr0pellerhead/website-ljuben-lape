@@ -1,5 +1,6 @@
 <?php
 	include_once '../sys/controllers/natprevari.php';
+	include_once '../sys/controllers/proekti.php';
 	include_once '../sys/controllers/functions.php';
 
 	// var_dump( $res );
@@ -81,33 +82,20 @@
 					<div class="proekti-natprevari clear-fix">
 						<div class="proekti">
 							<h1>Проекти</h1>
+
+							<?php foreach ($proekti as $row) { ?>
+
 							<div class="content clear-fix">
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<img src="assets/images/post-slika1.png">
+								<h2><?=$row['naslov'];?></h2>
+								<img src="../admin/uploads/<?=$row['slika_mala'];?>" width="200px" height="129px">
 								<span>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco .
+									<?=limit_text(strip_tags($row['sodrzina']),30); ?>
 								</span>
-							</div><!-- content -->
-							<div class="content clear-fix">
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<img src="assets/images/post-slika1.png">
-								<span>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco .
-								</span>
-							</div><!-- content -->
-							<div class="content clear-fix">
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<img src="assets/images/post-slika1.png">
-								<span>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco .
-								</span>
-							</div><!-- content -->
+							</div>
+
+							<?php } ?>
+							
+
 						</div><!-- proekti -->
 
 						<div class="proekti natprevari">
@@ -118,9 +106,9 @@
 
 							<div class="content clear-fix">
 								<h2><?=$row['naslov'];?></h2>
-								<img src="../admin/uploads/<?=$row['slika_mala'];?>?">
+								<img src="../admin/uploads/<?=$row['slika_mala'];?>" width="200px" height="129px">
 								<span>
-									<?=limit_text($row['sodrzina'],40); ?>
+									<?=limit_text(strip_tags($row['sodrzina']),30); ?>
 								</span>
 							</div>
 
