@@ -19,7 +19,7 @@ ul.tabs {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #a0706f;
+    background-color: #cdb2b2;
 
 }
 
@@ -55,9 +55,14 @@ ul.tabs li.first-child:hover
 opacity: .8
 }
 .light{
-    background-color: #b9a695;
+    background-color: #cdb2b2;
 }
-
+.dark{
+    background-color: #a0706f;
+}
+.dark .second-child{
+    background-color: #a0706f;
+}
 /*h2 naslovi */
 h2{
     font-size: 24px;

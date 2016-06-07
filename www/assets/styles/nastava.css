@@ -1,0 +1,60 @@
+div.nastava{
+    width: 50%;
+    float: left;
+}
+div.nastava h3{
+    font-weight: bold;
+    padding: 15px 0;
+}
+div.nastava h3.first{
+    padding-top: 0px!important;
+}
+div.nastava p{
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 0 40px 0 20px;
+    box-sizing: border-box;
+}
+p.dopolnitelna{
+    line-height: 2!important;
+}
+.nastava3{
+    clear: both;
+    width: 100%!important;
+}
+table{
+    margin-top: 20px;
+    border: 1px solid #000000;
+}
+table tr{
+    height: 43px;
+    box-sizing: border-box;
+}
+table tr td:first-child{
+    background-color: #57bb89;
+    font-weight: bold;
+}
+table td, table th{
+    border: 1px solid #000000;
+    padding: 5px 0px 5px 15px;
+}
+table th{
+    background-color: #57bb89;
+    font-weight: bold;
+
+}
+a.pdf-dokument{
+    display: block;
+    width: 490px ;
+    height: 40px;
+    background-color:#decccc ;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #813e3e;
+}
+a.pdf-dokument:hover{
+    background-color: #a0706f;
+}

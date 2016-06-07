@@ -63,7 +63,7 @@
                         <div class="clear-fix"></div>
                     </ul>
                 </li>
-                <li class="first-child">Историјат
+                <li class="first-child dark">Историјат
                     <ul>
                         <li class="second-child">Item 2-1
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ab alias assumenda aut commodi
@@ -96,7 +96,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="first-child">Програма за работа
+                <li class="first-child dark">Програма за работа
                     <ul>
                         <li class="second-child">Item 4-1 Link pdf</li>
                     </ul>
@@ -106,7 +106,7 @@
                         <li class="second-child">Item 4-1 Link pdf</li>
                     </ul>
                 </li>
-                <li class="first-child" id="kukjen-red">Куќен ред
+                <li class="first-child dark" id="kukjen-red">Куќен ред
                     <ul>
                         <li class="second-child">
                             <h2>Куќен ред на училиштето</h2>
