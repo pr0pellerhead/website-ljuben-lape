@@ -104,9 +104,9 @@
 						</div>
 					</div><!-- .prv-del-page-roditeli -->
 				</div><!-- sorabotka-page-roditeli -->
-				<div class="sorabotka-page-roditeli clear-fix">
+				<!-- <div class="sorabotka-page-roditeli clear-fix">
 					<h1>Соработка меѓу родителите и училиштето</h1>
-				</div><!-- sorabotka-page-roditeli -->
+				</div><!-- sorabotka-page-roditeli --> 
 			</div><!-- sections -->
 		</div><!-- wraper -->
 

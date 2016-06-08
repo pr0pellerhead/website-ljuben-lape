@@ -322,6 +322,10 @@ div.tabla .tabla-linkivi li a{
 	opacity:0.5;
 }
 
+a.najnovi-informacii{
+	color: #fff;
+}
+
 /*==========================================
 =            proekti natprevari            =
 ==========================================*/
@@ -375,13 +379,21 @@ div.content span{
 
 }
 
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color: #8D8D8D;
+}
+
 /*=====================================
 =            za roditelite            =
 =====================================*/
 
 
 div.za-roditelite div.roditeli-content{
-	width:450px;
+	width:515px;
 	float:left;
 }
 
@@ -404,6 +416,9 @@ div.za-roditelite div.roditeli-content .sorabotka-roditeli{
 	float:left;
 	box-sizing:border-box;
 	padding-right:10px;
+}
+div.za-roditelite div.roditeli-content .sorabotka-roditeli:nth-child(2){
+	float:right;
 }
 div.za-roditelite div.roditeli-content .sorabotka-roditeli h2{
 	text-transform:uppercase;

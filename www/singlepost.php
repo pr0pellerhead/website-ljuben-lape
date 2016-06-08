@@ -1,4 +1,11 @@
 <?php
+
+include_once '../sys/controllers/natprevari.php';
+include_once '../sys/controllers/za_roditelite.php';
+include_once '../sys/controllers/proekti.php';
+include_once '../sys/controllers/functions.php';
+include_once '../sys/controllers/singlepost.php';
+
 $css_files = [ 'reset.css' , 'main.css' , 'singlepost.css' ];
 $page_title = "Проекти и натпревари";
 include_once "../sys/includes/header.php";
@@ -8,40 +15,23 @@ include_once "../sys/includes/header.php";
         <div class="slide-left"></div><!-- slide-left -->
 
         <div class="slide-right">
-            <h1>Динамичен наслов на пост</h1>
+            <h1><?php echo $row[ 'naslov' ]; ?></h1>
         </div><!-- slide-right -->
 
     </div><!-- za-ucilisteto -->
 
     <div class="sorabotka-page-roditeli sections clear-fix">
         <div class="left-section">
-            <h1 class="title">Наслов на постот</h1>
-            <p class="date">&#128339; Динамичен датум на објава</p>
+            <h1 class="title"><?php echo $row[ 'naslov' ]; ?></h1>
+            <p class="date">&#128339; <?php echo $row[ 'objavena_na' ]; ?></p>
 
             <div class="content-post">
+                <?php if (empty($row['slika_golema'])) {
+                    $row['slika_golema'] = "school_building.png";
+                    }?> 
+                <img src="../admin/uploads/<?=$row['slika_golema'];?>" width="750px" alt="">
 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ea eaque eligendi non numquam officiis,
-                    perspiciatis quaerat rerum vitae voluptas! Dolor exercitationem facilis,
-                    maxime quaerat quasi quos rerum sint veritatis.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    A autem culpa expedita facere fugit iste officiis quod totam.
-                    Blanditiis cum dicta itaque laboriosam odit officiis quam quasi qui sapiente, vero.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet atque aut corporis doloremque earum facere facilis fuga libero,
-                    minus mollitia odit quae quaerat quidem, rerum sed vel veniam voluptate, voluptates.
-                    </p>
-
-                <img src="assets/images/kids.jpg" width="750px" alt="">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ea eaque eligendi non numquam officiis,
-                    perspiciatis quaerat rerum vitae voluptas! Dolor exercitationem facilis,
-                    maxime quaerat quasi quos rerum sint veritatis.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    A autem culpa expedita facere fugit iste officiis quod totam.
-                    Blanditiis cum dicta itaque laboriosam odit officiis quam quasi qui sapiente, vero.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet atque aut corporis doloremque earum facere facilis fuga libero,
-                    minus mollitia odit quae quaerat quidem, rerum sed vel veniam voluptate, voluptates.
-                </p>
-
+                  <p><?php echo $row['sodrzina'];?></p>
             </div>
 
 

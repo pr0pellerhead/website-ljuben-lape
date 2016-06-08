@@ -1,6 +1,9 @@
 <?php
+
 	include_once '../sys/controllers/natprevari.php';
+	include_once '../sys/controllers/za_roditelite.php';
 	include_once '../sys/controllers/proekti.php';
+	include_once '../sys/controllers/najnovi_informacii.php';
 	include_once '../sys/controllers/functions.php';
 
 	// var_dump( $res );
@@ -26,7 +29,7 @@
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 							consequat. Duis aute irure.</p>
-							<div class="icon1 icon"><span>историја на училиштеот</span></div><!-- icon1 -->
+							<div class="icon1 icon"><span>историја на училиштето</span></div><!-- icon1 -->
 							<div class="icon2 icon"><span>мисија и визија</span></div><!-- icon1 -->
 							<div class="icon3 icon"><span>наставен кадар</span></div><!-- icon1 -->
 						</div><!-- text -->
@@ -40,40 +43,31 @@
 					<div class="tabla clear-fix">
 						<h3>најнови информации</h3>
 
+					<?php foreach ($informacii as $row) { ?>
+
 						<div class="najnovi-informacii">
 							<div class="grupa-informacii clear-fix">
-								<img src="assets/images/school_building.png">
+								<img src="../admin/uploads/<?=$row['slika_mala'];?>" width="350px" height="150px">
 								<div class="info-text">
-									<h2>Lorem ipsum dolor sit amet</h2>
+									<h2><a class="najnovi-informacii" href="singlepost.php?id=<?=$row['id']?>"><?=$row['naslov']?></a></h2>
 									<span>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+										<?=limit_text(strip_tags($row['sodrzina']),30);?>
 									</span>
 								</div><!-- info-text -->
 							</div><!-- grupa-informacii -->
 						</div><!-- najnovi-informacii -->
 
-						<div class="najnovi-informacii">
-							<div class="grupa-informacii clear-fix">
-								<img src="assets/images/school_building.png">
-								<div class="info-text">
-									<h2>Lorem ipsum dolor sit amet</h2>
-									<span>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-									</span>
-								</div><!-- info-text -->
-							</div><!-- grupa-informacii -->
-						</div><!-- najnovi-informacii -->
+
+					<?php	} ?>
 
 						<div class="tabla-linkivi">
 							<ul>
-								<li><a href="">Lorem ipusm dolor sit amet</a></li>
-								<li><a href="">Lorem ipusm dolor sit amet</a></li>
-								<li><a href="">Lorem ipusm dolor sit amet</a></li>
-								<li><a href="">Lorem ipusm dolor sit amet</a></li>
+							<?php foreach ($naslovi as $row) { ?>
+				
+								<li><a href="singlepost.php?id=<?=$row['id']?>"><?=$row['naslov']?></a></li>
+
+							<?php } ?>
+
 							</ul>
 						</div><!-- tabla-linkivi -->
 
@@ -86,7 +80,7 @@
 							<?php foreach ($proekti as $row) { ?>
 
 							<div class="content clear-fix">
-								<h2><?=$row['naslov'];?></h2>
+								<h2><a href="singlepost.php?id=<?=$row['id']?>"><?=$row['naslov'];?></a></h2>
 								<img src="../admin/uploads/<?=$row['slika_mala'];?>" width="200px" height="129px">
 								<span>
 									<?=limit_text(strip_tags($row['sodrzina']),30); ?>
@@ -105,7 +99,7 @@
 							<?php foreach ($res as $row) { ?>
 
 							<div class="content clear-fix">
-								<h2><?=$row['naslov'];?></h2>
+								<h2><a href="singlepost.php?id=<?=$row['id']?>" ><?=$row['naslov'];?></a></h2>
 								<img src="../admin/uploads/<?=$row['slika_mala'];?>" width="200px" height="129px">
 								<span>
 									<?=limit_text(strip_tags($row['sodrzina']),30); ?>
@@ -114,38 +108,24 @@
 
 							<?php } ?>
 							
-
-							<!-- content -->
-<!-- 							<div class="content clear-fix">
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<img src="assets/images/post-slika1.png">
-								<span>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco .
-								</span>
-							</div><!-- content -->
-							<!-- <div class="content clear-fix">
-
-
-
-
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<img src="assets/images/post-slika1.png">
-								<span>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco .
-								</span>
-							</div><!-- content --> 
 						</div><!-- proekti -->
 					</div><!-- proekti-natprevari -->
 
 					<div class="za-roditelite clear-fix">
 						<div class="roditeli-content clear-fix">
 							<h1>за родителите</h1>
-
+							<?php foreach ($res3 as $row) {?>
+							
+							
 							<div class="sorabotka-roditeli">
+								<h2><?php echo $row[ 'naslov' ]; ?></h2>
+								<span><?php echo strip_tags(limit_text(strip_tags($row['sodrzina']),50)); ?></span>
+								<a href="singlepost.php?id=<?=$row['id']?>">прочитај повеќе</a>
+							</div><!-- sorabotka-roditeli -->
+
+							<?php  }  ?>
+
+							<!--<div class="sorabotka-roditeli">
 								<h2>Соработка со родителите</h2>
 								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -153,14 +133,18 @@
 								consequat. Duis aute irure dolor in reprehenderit in voluptate.</span>
 								<a href="#">прочитај повеќе</a>
 							</div><!-- sorabotka-roditeli -->
-							<div class="sorabotka-roditeli sredbi">
+
+
+							<!-- <div class="sorabotka-roditeli sredbi">
 								<h2>Родителски средби</h2>
 								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 								consequat. Duis aute irure dolor in reprehenderit in voluptate.</span>
 								<a href="#">прочитај повеќе</a>
-							</div><!-- sorabotka-roditeli -->
+							</div><!-- sorabotka-roditeli --> 
+
+
 						</div><!-- roditeli-content -->
 
 						<div class="izvestai">

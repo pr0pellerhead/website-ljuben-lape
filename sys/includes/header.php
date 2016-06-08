@@ -55,9 +55,9 @@
 		<div class="wraper">
 			<div class="nav">
 				<a href="./">почетна</a>
-				<a href="#">за училиштетo</a>
-				<a href="#">настава</a>
-				<a href="#">проекти и натпревари</a>
-				<a href="#">за родителите</a>
-				<a href="#">контакт</a>
+				<a href="za-ucilisteto.php">за училиштетo</a>
+				<a href="nastava.php">настава</a>
+				<a href="proekti_natprevari.php">проекти и натпревари</a>
+				<a href="za-roditelite.php">за родителите</a>
+				<a href="kontakt.php">контакт</a>
 			</div>
