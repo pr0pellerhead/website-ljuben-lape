@@ -30,7 +30,7 @@
 		<div class="header">
 			<div class="wraper clear-fix">
 				<div class="logo">
-					<a href="#"><img src="assets/images/logo-goelmo.png"></a>
+					<a href="../www/index.php"><img src="assets/images/logo-goelmo.png"></a>
 				</div><!-- logo -->
 
 				<div class="himna">
@@ -40,8 +40,7 @@
 					</form>
 
 					<audio controls>
-					  <source src="horse.ogg" type="audio/ogg">
-					  <source src="horse.mp3" type="audio/mpeg">
+					  <source src="assets/audio/himna.ogg" type="audio/ogg">
 					  Your browser does not support the audio tag.
 					</audio>
 				</div><!-- himna -->

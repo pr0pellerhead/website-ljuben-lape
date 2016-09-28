@@ -13,13 +13,13 @@
 				<div class="left-footer clear-fix">
 					<a href="#"><img src="assets/images/logo2.png" alt=""></a>
 					<ul>
-						<li><a href="#">Почетна</a></li>
-						<li><a href="#">За училиштето</a></li>
-						<li><a href="#">Проекти и натпревари</a></li>
-						<li><a href="#">Настава</a></li>
-						<li><a href="#">За родителите</a></li>
+						<li><a href="../www/index.php">Почетна</a></li>
+						<li><a href="../www/za-ucilisteto.php">За училиштето</a></li>
+						<li><a href="../www/proekti_natprevari.php">Проекти и натпревари</a></li>
+						<li><a href="../www/nastava.php">Настава</a></li>
+						<li><a href="../www/za-roditelite.php">За родителите</a></li>
 						<li><a href="#">Галерија</a></li>
-						<li><a href="#">Контакти</a></li>
+						<li><a href="../www/kontakt.php">Контакт</a></li>
 					</ul>
 				</div><!-- left-footer -->
 				<div class="right-footer clear-fix">
@@ -33,7 +33,7 @@
 						<span>contact@ljubenlape.edu.mk</span>
 					</div><!-- director -->
 					<div class="adresa">
-						<span>Видео Смилески Бато бр.4/лок 3 Аеродром Скопје</span>
+						<span>улица "Васко Караѓелевски" бр.2, Општина Аеродром, 1000 Скопје</span>
 					</div><!-- adresna -->
 				</div><!-- right-footer -->
 			</div><!-- wraper -->

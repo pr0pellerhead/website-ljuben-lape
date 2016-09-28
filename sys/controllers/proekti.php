@@ -4,4 +4,7 @@ $query=$db->query("select * from strani where id_kategorija=2 order by id DESC l
 $proekti=$query->fetchAll(PDO::FETCH_ASSOC);
 
 
+$query=$db->query("select * from strani where id_kategorija=2 order by id DESC");
+$all=$query->fetchAll(PDO::FETCH_ASSOC);
+
 ?>

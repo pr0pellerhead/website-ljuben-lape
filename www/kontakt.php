@@ -20,10 +20,10 @@
                 <div class="kontakt-info">
                     <p>
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>Видое Смилески Бато бр. 4 / Лок.3 Аеродром, 1000 Скопје</span>
+                        <span>улица "Васко Караѓелевски" бр.2, Општина Аеродром, 1000 Скопје</span>
                     </p>
 
-                   <p><i class="fa fa-phone-square" aria-hidden="true"></i><span>02 / 31-21-255</span></p>
+                   <p><i class="fa fa-phone-square" aria-hidden="true"></i><span>02 / 24-50-220</span></p>
 
                     <p><i class="fa fa-envelope" aria-hidden="true"></i><span>contact@ljubenlape.edu.mk</span></p>
 

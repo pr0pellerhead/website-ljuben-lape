@@ -2,12 +2,7 @@
 <link rel="stylesheet" href="css/main.css">
 
 <?php
-/**
- * Created by PhpStorm.
- * User: Kristina Shalkoska
- * Date: 5/12/2016
- * Time: 7:44 PM
- */
+
 
 include 'user_check.php';
 

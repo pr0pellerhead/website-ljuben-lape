@@ -20,15 +20,13 @@
 
 				<div class="slide-right">
 						<div class="text clear-fix">
-							<h1>За училиштето</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure.</p>
+							<h1>Визија на училиштето</h1>
+							<p>
+								Одличен кадар, мотивирани ученици и партиципативни семејства кои
+								работат заедно за да обезбедат квалитетно образование, што ќе го направи
+								ОУ Љубен Лапе водечко училиште, во кое другите училишта ќе гледаат
+								модел.</p>
+							<p></p>
 							<div class="icon1 icon"><span>историја на училиштето</span></div><!-- icon1 -->
 							<div class="icon2 icon"><span>мисија и визија</span></div><!-- icon1 -->
 							<div class="icon3 icon"><span>наставен кадар</span></div><!-- icon1 -->
